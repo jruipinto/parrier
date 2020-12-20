@@ -1,0 +1,21 @@
+{
+    "package": "package.json",
+    "blueprint": "blueprint.md",
+    "input": "blueprint.md",
+    "output": "README.md",
+    "placeholder": [
+        "{{",
+        "}}"
+    ],
+    "documentationConfig": {
+        "markdown": {
+            "titleLevel": 2
+        }
+    },
+    "headingPrefix": {
+        "1": "",
+        "2": ""
+    },
+    "checkLinks": true,
+    "line": "aqua"
+}
