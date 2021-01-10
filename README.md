@@ -1,76 +1,168 @@
-# Welcome to ts-npm-package 👋
+<!-- ⚠️ This README has been generated from the file(s) "blueprint.md" ⚠️-->
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#welcome-to--pkgname-)
+
+# Welcome to parrier
+
 ![Version](https://img.shields.io/badge/version-0.1.0--alpha-blue.svg?cacheSeconds=2592000)
-![Prerequisite](https://img.shields.io/badge/node-%3E%3D12.18.2-blue.svg)
-![Prerequisite](https://img.shields.io/badge/npm-%3E%3D6.14.5-blue.svg)
-[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/jruipinto/ts-npm-package#readme)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/jruipinto/ts-npm-package/graphs/commit-activity)
-[![License: MIT](https://img.shields.io/github/license/jruipinto/ts-npm-package)](https://github.com/jruipinto/ts-npm-package/blob/master/LICENSE)
+![Prerequisite](https://img.shields.io/badge/node-%3E%3D14.15.3-blue.svg)
+![Prerequisite](https://img.shields.io/badge/npm-%3E%3D6.14.9-blue.svg)
+[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://jruipinto.github.io/parrier/)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/jruipinto/parrier/graphs/commit-activity)
+[![License: MIT](https://img.shields.io/github/license/jruipinto/parrier)](https://github.com/jruipinto/parrier/blob/master/LICENSE)
 
-> A template to develop npm packages in typescript with auto publish.
+[![Actions Status](https://github.com/jruipinto/parrier/workflows/npm-publish/badge.svg)](https://github.com/jruipinto/parrier/actions)
 
-### 🏠 [Homepage](https://jruipinto.github.io/ts-npm-package/#readme)
+
+> This is a package that lists everything inside the provided "path" (or the full tree structure if "recurse" is set), asynchronously.
+
+![Gif showing software working](preview.gif "Preview Gif")
+
+### [Homepage](https://jruipinto.github.io/parrier/)
+
+
+### [Demo](demo.com/demo)
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#table-of-contents)
+
+## Table of Contents
+
+* [Welcome to parrier](#welcome-to-parrier)
+		* [[Homepage](https://jruipinto.github.io/parrier/)](#homepagehttpsjruipintogithubioparrier)
+		* [[Demo](demo.com/demo)](#demodemocomdemo)
+	* [Prerequisites](#prerequisites)
+	* [Install](#install)
+	* [Usage](#usage)
+		* [Async / await example](#async--await-example)
+		* [Promise example](#promise-example)
+	* [Run tests](#run-tests)
+	* [Author](#author)
+	* [Contributing](#contributing)
+	* [References](#references)
+	* [Show your support](#show-your-support)
+	* [License](#license)
+
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#prerequisites)
+
+## Prerequisites
+
+
+* **node**: >=14.15.3
+* **npm**: >=6.14.9
+      
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#install)
+
+## Install
+
+```sh
+npm install
+```
+
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#usage)
 
 ## Usage
 
-Use this template to create your own node packages in typescript.
-Follow these steps:
+### Async / await example
 
-1. Use this template
-2. Edit package.json
-3. Edit LICENSE if you need
-4. Install necessary packages
-   ``
-   npm install
-   ``
-5. Overwrite README.md
-   
-   ``
-   npm run generateReadme
-   ``
+```js
+/**
+ * Async / await
+ */
 
-   Edit README.md, add a fancy screenshot and your references
+const parrier = require('parrier');
 
-6. Overwrite CONTRIBUTING.md
-   
-   ``
-   npm run update-contrib
-   ``
+const path = './example-folder/';
 
-7. Create a NPM acount (if you haven't one already)
-8. Generate a NPM_TOKEN
-9.  Add NPM_TOKEN to repo's SECRETS (inside settings tab)
+(() => {
+  try {
+    async () => {
+      const folderContent = await parrier(path);
+      console.log(folderContent); // logs an array of IFile
 
-After all these steps, every time you update the version inside package.json and commit to master branch, the new version will automatically be submited to NPM (if it passes all the tests)
+      // IFile is a typescript interface (of this package)
+      // that represents the file object (including
+      // file.name, file.extension, file.isFile, etc...)
+      // refer to API to know more
+    };
+  } catch (err) {
+    console.log(err.message);
+  }
+})();
+```
 
+### Promise example
+
+```js
+/**
+ * Promise
+ */
+
+const parrier = require('parrier');
+
+const path = './example-folder/';
+
+parrier(path)
+  .then((folderContent) => console.log(folderContent))
+  .catch((err) => console.log(err.message));
+```
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#run-tests)
+
+## Run tests
+
+```sh
+npm run test
+```
+
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#author)
 
 ## Author
 
-👤 **jruipinto**
 
-* Github: [@jruipinto](https://github.com/jruipinto)
-* LinkedIn: [@j-rui-pinto](https://linkedin.com/in/j-rui-pinto)
+**jruipinto**
 
-## 🤝 Contributing
+
+- GitHub: [@jruipinto](https://github.com/jruipinto)
+- LinkedIn: [https://pt.linkedin.com/in/j-rui-pinto](https://pt.linkedin.com/in/j-rui-pinto)
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#contributing)
+
+## Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check [issues page](https://github.com/jruipinto/ts-npm-package/issues). You can also take a look at the [contributing guide](https://github.com/jruipinto/ts-npm-package/blob/master/CONTRIBUTING.md).
+Feel free to check [issues page](https://github.com/jruipinto/parrier/issues). You can also take a look at the [contributing guide](https://github.com/jruipinto/parrier/blob/master/CONTRIBUTING.md).
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#references)
+
+## References
+
+- Package name generated with [Namelix](https://namelix.com)
+- Readme generated with [@appnest/readme](https://github.com/andreasbm/readme)
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#show-your-support)
 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
 
-## References
-* [Img Shields](https://shields.io)
-* [readme-md-generator](https://github.com/kefranabg/readme-md-generator)
-* [weallcontribute]()
 
 
-## 📝 License
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#license)
 
-Copyright © 2020 [jruipinto](https://github.com/jruipinto).
+## License
 
-This project is [MIT](https://github.com/jruipinto/ts-npm-package/blob/master/LICENSE) licensed.
+Copyright © 2021 [jruipinto](https://github.com/jruipinto).
 
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+This project is [MIT](https://github.com/jruipinto/parrier/blob/master/LICENSE) licensed.
