@@ -14,10 +14,10 @@
 
 ![Gif showing software working]({{ pkg.readmeMeta.preview.url }} "Preview Gif")
 
-### [Homepage](https://{{ pkg.author.name }}.github.io/{{ pkg.name }}/)
+[Homepage](https://{{ pkg.author.name }}.github.io/{{ pkg.name }}/)
 
 
-### [Demo]({{ pkg.readmeMeta.demo.url }})
+[Demo]({{ pkg.readmeMeta.demo.url }})
 
 {{ template:toc }}
 

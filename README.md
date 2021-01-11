@@ -17,10 +17,10 @@
 
 ![Gif showing software working](preview.gif "Preview Gif")
 
-### [Homepage](https://jruipinto.github.io/parrier/)
+[Homepage](https://jruipinto.github.io/parrier/)
 
 
-### [Demo](demo.com/demo)
+[Demo](demo.com/demo)
 
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#table-of-contents)
@@ -28,8 +28,6 @@
 ## Table of Contents
 
 * [Welcome to parrier](#welcome-to-parrier)
-		* [[Homepage](https://jruipinto.github.io/parrier/)](#homepagehttpsjruipintogithubioparrier)
-		* [[Demo](demo.com/demo)](#demodemocomdemo)
 	* [Prerequisites](#prerequisites)
 	* [Install](#install)
 	* [Usage](#usage)
