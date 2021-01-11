@@ -58,7 +58,7 @@
 ## Install
 
 ```sh
-npm install
+npm install parrier
 ```
 
 

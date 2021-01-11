@@ -30,7 +30,7 @@
 ## Install
 
 ```sh
-npm install
+npm install {{ pkg.name }}
 ```
 
 
