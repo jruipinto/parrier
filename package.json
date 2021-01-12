@@ -1,6 +1,6 @@
 {
     "name": "parrier",
-    "version": "0.2.0-alpha",
+    "version": "0.2.1-alpha",
     "description": "This is a package that lists everything inside the provided \"path\" (or the full tree structure if \"recurse\" is set), asynchronously.",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
@@ -92,7 +92,7 @@
     },
     "readmeMeta": {
         "demo": {
-            "url": "demo.com/demo"
+            "url": "https://repl.it/@jruipinto/parrier-demo#index.js"
         },
         "logo": {
             "url": "logo.png"

@@ -20,7 +20,7 @@
 [Homepage](https://jruipinto.github.io/parrier/)
 
 
-[Demo](demo.com/demo)
+[Demo](https://repl.it/@jruipinto/parrier-demo#index.js)
 
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#table-of-contents)
