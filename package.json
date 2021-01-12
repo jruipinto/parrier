@@ -1,6 +1,6 @@
 {
     "name": "parrier",
-    "version": "0.1.0-alpha",
+    "version": "0.2.0-alpha",
     "description": "This is a package that lists everything inside the provided \"path\" (or the full tree structure if \"recurse\" is set), asynchronously.",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
@@ -25,7 +25,12 @@
     },
     "keywords": [
         "npm",
-        "package"
+        "package",
+        "dirtree",
+        "directory",
+        "tree",
+        "async",
+        "promise"
     ],
     "author": {
         "name": "jruipinto",
@@ -82,8 +87,8 @@
         "lib/**/*"
     ],
     "engines": {
-        "node": ">=14.15.3",
-        "npm": ">=6.14.9"
+        "node": ">=8.0.0",
+        "npm": ">=5.0.0"
     },
     "readmeMeta": {
         "demo": {

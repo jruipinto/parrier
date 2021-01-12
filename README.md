@@ -3,9 +3,9 @@
 
 # Welcome to parrier
 
-![Version](https://img.shields.io/badge/version-0.1.0--alpha-blue.svg?cacheSeconds=2592000)
-![Prerequisite](https://img.shields.io/badge/node-%3E%3D14.15.3-blue.svg)
-![Prerequisite](https://img.shields.io/badge/npm-%3E%3D6.14.9-blue.svg)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/jruipinto/parrier)
+![Prerequisite](https://img.shields.io/badge/node->=8.0.0-blue.svg)
+![Prerequisite](https://img.shields.io/badge/npm->=5.0.0-blue.svg)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://jruipinto.github.io/parrier/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/jruipinto/parrier/graphs/commit-activity)
 [![License: MIT](https://img.shields.io/github/license/jruipinto/parrier)](https://github.com/jruipinto/parrier/blob/master/LICENSE)
@@ -47,8 +47,8 @@
 ## Prerequisites
 
 
-* **node**: >=14.15.3
-* **npm**: >=6.14.9
+* **node**: >=8.0.0
+* **npm**: >=5.0.0
       
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#install)
@@ -73,6 +73,7 @@ npm install parrier
  */
 
 const parrier = require('parrier');
+// import parrier from 'parrier'; // for typescript
 
 const path = './example-folder/';
 
@@ -101,6 +102,7 @@ const path = './example-folder/';
  */
 
 const parrier = require('parrier');
+// import parrier from 'parrier'; // for typescript
 
 const path = './example-folder/';
 

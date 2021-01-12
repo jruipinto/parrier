@@ -6,6 +6,7 @@
  */
 
 const parrier = require('parrier');
+// import parrier from 'parrier'; // for typescript
 
 const path = './example-folder/';
 

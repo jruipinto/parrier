@@ -1,2 +1,5 @@
 import { parrier } from './parrier';
-export { parrier };
+// export for module
+export default parrier;
+// export for commonjs
+module.exports = parrier;

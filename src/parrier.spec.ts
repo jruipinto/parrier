@@ -1,6 +1,6 @@
 import chai from 'chai';
 import chaiAsPromised from 'chai-as-promised';
-import { parrier } from './parrier';
+import parrier from './index';
 import mockfs from 'mock-fs';
 
 const { expect } = chai;
@@ -59,7 +59,7 @@ describe('parrier', () => {
       .that.have.nested.property('[2].children[2].children[0].isFile');
   });
 
-  it('should list files at __dirname if no path is provided', () => {
+  it('should list files at "./" if no path is provided', () => {
     mockfs.restore();
     return expect(parrier()).to.eventually.be.an('Array');
   });

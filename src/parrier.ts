@@ -1,6 +1,8 @@
-import { readdir } from 'fs/promises';
+import { promisify } from 'util';
+import { readdir as readdirSync } from 'fs';
 import { getFileAsync, fillChildrenAsync } from './functions';
 import { IFile } from './models';
+const readdir = promisify(readdirSync);
 
 /**
  * Lists everything inside the provided \"path\" (or the full tree structure if \"recurse\" is set), asynchronously.
@@ -22,13 +24,13 @@ import { IFile } from './models';
  * ```
  * @example
  * ```typescript
- * // Getting __dirname content:
- * // prints files & folders inside __dirname
+ * // Getting './' content:
+ * // prints files & folders inside './'
  * parrier().then(console.log);
  * ```
  *
  */
-export async function parrier(path = __dirname, options = { recurse: false }): Promise<IFile[]> {
+export async function parrier(path = './', options = { recurse: false }): Promise<IFile[]> {
   const { recurse } = options;
   const filesNames: string[] = await readdir(path);
   const files = await Promise.all(filesNames.map((fname) => getFileAsync(path, fname)));

@@ -1,8 +1,8 @@
 # Welcome to {{ pkg.name }}
 
-![Version](https://img.shields.io/badge/version-0.1.0--alpha-blue.svg?cacheSeconds=2592000)
-![Prerequisite](https://img.shields.io/badge/node-%3E%3D14.15.3-blue.svg)
-![Prerequisite](https://img.shields.io/badge/npm-%3E%3D6.14.9-blue.svg)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/{{ pkg.author.name }}/{{ pkg.name }})
+![Prerequisite](https://img.shields.io/badge/node-{{ pkg.engines.node }}-blue.svg)
+![Prerequisite](https://img.shields.io/badge/npm-{{ pkg.engines.npm }}-blue.svg)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://{{ pkg.author.name }}.github.io/{{ pkg.name }}/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/{{ pkg.author.name }}/{{ pkg.name }}/graphs/commit-activity)
 [![License: MIT](https://img.shields.io/github/license/{{ pkg.author.name }}/{{ pkg.name }})](https://github.com/{{ pkg.author.name }}/{{ pkg.name }}/blob/master/LICENSE)
