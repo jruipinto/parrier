@@ -40,12 +40,13 @@ npm install {{ pkg.name }}
 
 {{ load:example/promise-example.md }}
 
-## Run tests
+## API
 
-```sh
-npm run test
-```
+Follow this link to check the [API]({{ pkg.homepage }})
 
+## Changelog
+
+Follow this link to check the [Changelog](CHANGELOG.md)
 
 ## Author
 

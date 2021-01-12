@@ -33,7 +33,8 @@
 	* [Usage](#usage)
 		* [Async / await example](#async--await-example)
 		* [Promise example](#promise-example)
-	* [Run tests](#run-tests)
+	* [API](#api)
+	* [Changelog](#changelog)
 	* [Author](#author)
 	* [Contributing](#contributing)
 	* [References](#references)
@@ -112,14 +113,18 @@ parrier(path)
 ```
 
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#run-tests)
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#api)
 
-## Run tests
+## API
 
-```sh
-npm run test
-```
+Follow this link to check the [API](https://jruipinto.github.io/parrier/)
 
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#changelog)
+
+## Changelog
+
+Follow this link to check the [Changelog](CHANGELOG.md)
 
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#author)

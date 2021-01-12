@@ -15,9 +15,10 @@
         "version": "npm run format && git add -A src",
         "postversion": "git push && git push --tags",
         "generate:readme": "npx @appnest/readme generate",
-        "generate:contributing": "weallcontribute -o . && git add CONTRIBUTING.md && git commit -m 'docs(contributing): updated CONTRIBUTING.md'",
+        "generate:contributing": "weallcontribute -o .",
+        "generate:changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
         "generate:api-docs": "typedoc",
-        "generate:all": "npm run generate:api-docs && npm run generate:contributing && npm run generate:readme"
+        "generate:all": "npm run generate:contributing && npm run generate:changelog && npm run generate:readme && npm run generate:api-docs"
     },
     "repository": {
         "type": "git",
@@ -71,6 +72,7 @@
         "@typescript-eslint/parser": "^4.10.0",
         "chai": "^4.2.0",
         "chai-as-promised": "^7.1.1",
+        "conventional-changelog-cli": "^2.1.1",
         "eslint": "^7.16.0",
         "eslint-config-prettier": "^7.1.0",
         "mocha": "^8.2.1",
