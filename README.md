@@ -17,10 +17,7 @@
 
 ![Gif showing software working](preview.gif "Preview Gif")
 
-[Homepage](https://jruipinto.github.io/parrier/)
-
-
-[Demo](https://repl.it/@jruipinto/parrier-demo#index.js)
+[![Try on repl.it](https://img.shields.io/badge/repl-try%20on%20repl.it-%23f8fafa?style=for-the-badge&logo=repl.it)](https://repl.it/@jruipinto/parrier-demo#index.js)
 
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](#table-of-contents)

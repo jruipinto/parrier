@@ -14,10 +14,7 @@
 
 ![Gif showing software working]({{ pkg.readmeMeta.preview.url }} "Preview Gif")
 
-[Homepage](https://{{ pkg.author.name }}.github.io/{{ pkg.name }}/)
-
-
-[Demo]({{ pkg.readmeMeta.demo.url }})
+[![Try on repl.it](https://img.shields.io/badge/repl-try%20on%20repl.it-%23f8fafa?style=for-the-badge&logo=repl.it)]({{ pkg.readmeMeta.demo.url }})
 
 {{ template:toc }}
 
